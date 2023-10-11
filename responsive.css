@@ -1,0 +1,528 @@
+@media(max-width: 1280px){
+    /*<------------------------------------------------------------------------>
+    ------                          I N D E X                            ------>
+    --------------------------------------------------------------------------->
+    ------                         H E A D E R                           ----->*/
+    .navbar .logo h3{
+        font-size: 30px;
+    }
+    .navbar{
+        padding: 10px 50px 10px 50px;
+    }
+    .logLink {
+        position: absolute;
+        top: 26px;
+        right: 50px;
+    }
+
+    /*<------------------------------------------------------------------------>
+    ------                          I N D E X                            ------>
+    --------------------------------------------------------------------------->
+    ------                      C O N T A I N E R                       ----->*/
+    #container{
+        background-position:  60% 0%;
+    }
+    .conDetails{
+        padding: 150px 0 50px 100px;
+        top: 20vh;
+        width: 60%;
+    }
+    
+    .conDetails h1 {
+        font-size: 40px;
+        color: #000;
+        text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000; 
+    }
+    
+    .conDetails p{
+        font-size: 20px;
+        width: 75%;
+        padding-top: 20px;
+        text-align: justify;
+        color: #acff75;
+        text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000; 
+    }
+    .transBtn{
+        color: #FFCF96;
+        border: 1px solid #FFCF96;
+        text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000; 
+    }
+
+    /*<!----------------------------------------------------------------------->
+    <!-----                          I N D E X                            ----->
+    <!------------------------------------------------------------------------->
+    <!-----                       I N D U S T R Y                       ----->*/
+    .imgStyle{
+        padding-top: 40px;
+    }
+    /*<!----------------------------------------------------------------------->
+    <!-----                         R E V I E W                           ----->
+    <!------------------------------------------------------------------------->
+    <!-----                     S T A C K   C A R D                     ----->*/
+    
+    .cardImg {
+        padding: 20px 30px 20px 40px;
+    }
+    .cardImg img {
+        width: 200px;
+        height: 200px;
+    }
+    /*<!------------------------------------------------------------------------->
+    <!-----                    N E W S  L E T T E R                         ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                    N E W S  L E T T E R                       ----->*/ 
+    .form button{
+        width: 25%;
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media(max-width: 992px){
+    /*<------------------------------------------------------------------------>
+    ------                          I N D E X                            ------>
+    --------------------------------------------------------------------------->
+    ------                         H E A D E R                           ----->*/
+    .navbar{
+        padding: 20px 10px 20px 30px;
+    }
+    .logLink {
+        position: absolute;
+        top: 36px;
+        right: 50px;
+    }
+    .logLink a, .navLink a {
+        margin: 0 10px;
+    }
+    /*<------------------------------------------------------------------------>
+    ------                          I N D E X                            ------>
+    --------------------------------------------------------------------------->
+    ------                      C O N T A I N E R                       ----->*/
+    
+    .conDetails{
+        top: 20vh;
+        width: 60%;
+        padding:  200px 0 0 50px;
+    }
+    .conDetails h1 {
+        font-size: 40px;
+        color: #000;
+        text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000; ;
+    }
+    
+    .conDetails p{
+        padding-top: 20px;
+        font-size: 20px;
+        width: 75%;
+        text-align: justify;
+        color: #09ff00;
+        text-shadow:
+        1px 1px 0 #000a44;
+    }
+    #button {
+        display: flex;
+        flex-direction: column;
+    }
+    .blueBtn{
+        margin-right: 30px;
+    }
+    .transBtn{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+
+    .trustImg{
+        padding: 0;
+    }
+    .trustImg img{
+        margin: 10px 25px;
+    }
+    #trust h2{
+        font-size: 15px;
+        padding: 5px 10px;
+        margin-bottom: 20px;
+    }
+    .line{
+        width: 90%;
+        height: 1.5px;
+    }
+    /*<!----------------------------------------------------------------------->
+    <!-----                          I N D E X                            ----->
+    <!------------------------------------------------------------------------->
+    <!-----                       I N D U S T R Y                       ----->*/
+    #industry{
+        padding: 50px;
+    }
+    .private{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgStyle {
+        width: 70%;
+        order: 1;
+        min-height: 30vh;
+    }
+    .seImg{
+        padding-bottom: 20px;
+    }
+    .priDetails{
+        width: 90%;
+        margin-top: 10px;
+        order: 2;
+    }
+    .priDetails h3{
+        font-size: 30px;
+    }
+    .priDetails ol li p{
+        font-size: 12px;
+        padding-left: 20px;
+    }
+    .priDetails ol li span{
+        font-size: 18px;
+    }
+    /*<!----------------------------------------------------------------------->
+    <!-----                         R E V I E W                           ----->
+    <!------------------------------------------------------------------------->
+    <!-----                     S T A C K   C A R D                     ----->*/
+    #review{
+        width: 95%;
+    }
+    .cardDetails{
+        width: 60%;
+    }
+    /*<!------------------------------------------------------------------------->
+    <!-----                    N E W S  L E T T E R                         ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                    N E W S  L E T T E R                       ----->*/ 
+    #newsLetter{
+        padding: 100px 40px;
+    }
+    .newsText{
+        width: 40%;
+    }
+    .newsText h2 {
+        color: #f1f1f1;
+        font-size: 20px;
+    }
+    .form {
+        width: 50%;
+    }
+    /*<!------------------------------------------------------------------------->
+    <!-----                         F O O T E R                             ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                         F O O T E R                           ----->*/
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .footCon{
+        width: 100%;
+    }
+    .footDetails{
+        width: 100%;
+    }
+    .footIcon{
+        width: 50%;
+    }
+    .easy-p1 li img{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 0;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+@media(max-width: 768px){
+    /*<------------------------------------------------------------------------>
+    ------                          I N D E X                            ------>
+    --------------------------------------------------------------------------->
+    ------                         H E A D E R                           ----->*/
+    .easy-pl {
+        padding-left: 0px;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .navbar .logo {
+        padding-left: 50px;
+    }
+    .logLink{
+        position: static;
+    }
+    #header{
+        z-index: 2;
+        position: relative;
+    }
+    .navbar .component{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: #1745c2;
+        box-shadow: 0 40px 60px #0000001f;
+        padding: 80px 0 0 20px;
+    }
+    .navbar .component.active{
+        right: 0px;
+    }
+    .navbar a:hover::after,
+    .navbar a.active::after {
+        bottom: 5px; /* position at the bottom of the anchor element */
+        left: 20%; /* center it horizontally */
+    }
+    .navbar .navLink, .navbar .logLink{
+        display: flex;
+        flex-direction: column;
+    } 
+    .navbar .navLink a, .navbar .logLink a{
+        padding: 15px;
+    }
+    #mobile{
+        display: flex;
+        padding-right: 70px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        font-size: 20px;
+        color: #afafaf;
+    }
+    .conDetails p {
+        font-size: 16px;
+        font-weight: 400;
+        width: 80%;
+    }
+
+    .trustImg img{
+        width: 52px;
+        height: auto;
+        margin: 10px 25px;
+
+    }
+    /*<!----------------------------------------------------------------------->
+    <!-----                         R E V I E W                           ----->
+    <!------------------------------------------------------------------------->
+    <!-----                     S T A C K   C A R D                     ----->*/
+    #review{
+        width: 100%;
+    }
+    .cardDetails{
+        width: 55%;
+    }
+    .cardDetails h3{
+        font-size: 20px;
+        color: #000;
+        margin-bottom: 30px;
+    }
+    .cardDetails p{
+        font-size: 14px;
+        text-align: justify;
+        color: #103346;
+    }
+    /*<!------------------------------------------------------------------------->
+    <!-----                    N E W S  L E T T E R                         ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                    N E W S  L E T T E R                       ----->*/ 
+    #newsLetter{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+    .newsText{
+        width: 90%;
+    }
+    .form {
+        width: 90%;
+        padding: 20px 0;
+    }
+    
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+}
+@media(max-width: 576px){
+    /*<------------------------------------------------------------------------>
+    ------                          I N D E X                            ------>
+    --------------------------------------------------------------------------->
+    ------                         H E A D E R                           ----->*/
+    #header{
+        position: sticky;
+    }
+    .navbar {
+        padding: 0px 5px 0px 5px;
+    }
+    .navbar .logo {
+        padding-left: 10px;
+    }
+    #mobile{
+        padding-right: 30px;
+    }
+
+    .conDetails{
+        padding: 30% 0 0 10%;
+        width: 70%;
+    }
+   .conDetails h1 {
+        font-size: 20px;
+        color: #FFCF96;
+    }
+    .conDetails p{
+        font-size: 12px;
+        font-weight: 600;
+        width: 80%;
+        text-align: justify;
+        color: #000000;
+        text-shadow: 0 0 0 transparent;
+    }
+    .button{
+        padding-top: 40px;
+    }
+    .blueBtn {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .transBtn{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    #trust{
+        padding: 50px 20px;
+    }
+    .trustImg img{
+        margin: 10px 15px;
+    }
+    /*<!----------------------------------------------------------------------->
+    <!-----                          I N D E X                            ----->
+    <!------------------------------------------------------------------------->
+    <!-----                       I N D U S T R Y                       ----->*/
+    #industry{
+        padding: 20px;
+    }
+    /*<!----------------------------------------------------------------------->
+    <!-----                          I N D E X                            ----->
+    <!------------------------------------------------------------------------->
+    <!-----                        C O U N T E R                        ----->*/
+    .counter-section{
+        display: flex;
+        flex-direction: column;
+    }
+    /*<!----------------------------------------------------------------------->
+    <!-----                         R E V I E W                           ----->
+    <!------------------------------------------------------------------------->
+    <!-----                     S T A C K   C A R D                     ----->*/
+    .card{
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .cardImg{
+        padding: 20px 0 0 0;
+    }
+    .cardImg img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%; /* this creates the circle shape */
+        object-fit: cover;  /* ensures the image covers the entire element without distortion */
+        overflow: hidden;
+    }
+    .cardDetails{
+        width: 95%;
+        padding: 5px;
+        padding-bottom: 300px;
+    }
+    .cardDetails h3{
+        padding: 20px 0 0px 0;
+        text-align: center;
+    }
+    #bounceElement{
+        font-size: 30px;
+    }
+    #counter h3 {
+        font-size: 30px;
+    }
+    /*<!------------------------------------------------------------------------->
+    <!-----                    N E W S  L E T T E R                         ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                    N E W S  L E T T E R                       ----->*/ 
+    #newsLetter{
+        margin-top: 120px;
+        padding: 40px 10px;
+    } 
+    .form input{
+        height: 2.5rem;
+        width: 70%;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .form button{
+        height: 2.5rem;
+        width: 30%;
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .notify{
+        width: 250px;
+        height: 60px;
+        margin: 0px 0px;
+        padding: 0 10px;
+        font-size: 16px;
+        text-align: justify;
+    }
+    .notify i{
+        margin: 0 10px;
+        font-size: 25px;
+        background: #f0f0f0;
+    }
+    /*<!------------------------------------------------------------------------->
+    <!-----                         F O O T E R                             ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                         F O O T E R                           ----->*/
+    .footer{
+        padding: 50px 20px;
+    }
+    .footDetails{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .easy-p1 li img{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2px 0;
+    }
+}
+
