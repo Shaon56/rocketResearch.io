@@ -124,9 +124,9 @@ document.addEventListener("DOMContentLoaded", function() {
     applyLetterAnimation("#counter h3"); // For the h3 in #counter
     applyLetterAnimation(".animated-heading"); // For other h3 elements with class "animated-heading"
 });*/
-let hasAnimated = false;
-
 window.addEventListener('scroll', function(){
+    let hasAnimated = false;
+
     const counterSection = document.querySelector("#counter");
     const rect = counterSection.getBoundingClientRect();
 
@@ -140,21 +140,62 @@ window.addEventListener('scroll', function(){
 <!-----                          R E V I E W                          ----->
 <!------------------------------------------------------------------------->
 <!-----                          B O U N C E                        ----->*/
-document.getElementById('bounceElement').addEventListener('scroll', function() {
-    this.classList.add('bounce');
-
-    // Remove the animation class once the animation completes so it can be triggered again
-    this.addEventListener('animationend', () => {
-        this.classList.remove('bounce');
-    });
-});
-
-
-
-function isInViewport(element){
+function isInViewport(element) {
     const rect = element.getBoundingClientRect();
-    return(rect.top <= window.innerHeight && rect.bottom >= 0);
+    return (rect.top <= window.innerHeight && rect.bottom >= 0);
 }
+
+function animateLetter(letter){
+    return new Promise(resolve => {
+        let  targetCharCode = letter.textContent.charCodeAt(0);
+        let currentCharCode;
+
+        if(targetCharCode >= 65 && targetCharCode <= 90){
+            currentCharCode = 65;
+        }else if(targetCharCode >= 97 && targetCharCode <= 122){
+            currentCharCode = 97;
+        }else{
+            currentCharCode =33;
+        }
+
+        let interval = setInterval(() => {
+            if(currentCharCode <= targetCharCode){
+                letter.textContent = String.fromCharCode(currentCharCode);
+                currentCharCode++
+            }else{
+                clearInterval(interval);
+                resolve();
+            }
+        }, 20);
+    })
+}
+
+async function animateWord(element){
+    let text = element.textContent;
+    element.innerHTML = "";
+
+    for(let i = 0; i < text.length; i++){
+        let letterSpan = document.createElement("span");
+        letterSpan.textContent = text[i];
+        element.appendChild(letterSpan);
+
+        await animateLetter(letterSpan);
+    }
+}
+
+let wordRunElement = document.getElementById('wordRun');
+let hasAnimated = false;
+
+window.addEventListener('scroll', function(){
+    if (!hasAnimated && isInViewport(wordRunElement)){
+        hasAnimated = true;
+        animateWord(wordRunElement);
+    }
+})
+
+
+
+
 
 window.addEventListener('scroll', function(){
     console.log("Scrolling..."); // To check if scroll event is detected
@@ -204,3 +245,139 @@ document.addEventListener('DOMContentLoaded', () =>{
         }
     });
 })
+
+/*<!------------------------------------------------------------------------->
+<!-----                     M O D E L . H T M L                         ----->
+<!--------------------------------------------------------------------------->
+<!-----                  M O D E L   E L E M E N T                    ----->*/
+
+/*-----------------------------------click event on btn----------------------------------------------*/ 
+const buttons = document.querySelectorAll('.selectBtn');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        buttons.forEach(btn => {
+            btn.classList.remove('active');
+        });
+        this.classList.add('active');
+    });
+});
+
+
+/*-----------------------------------functionality add on btn----------------------------------------------*/ 
+function filterElements(category){
+    let elements = document.querySelectorAll('.element');
+
+    elements.forEach(element => element.style.display = 'none');
+    if(category === "all"){
+        elements.forEach(element => element.style.display = 'block')
+    }
+    else{
+        let filterElements = document.querySelectorAll('.element[data-type = "' + category + '"]');
+        filterElements.forEach(element => element.style.display = 'block');
+    }
+}
+
+document.querySelectorAll('.selectBtn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        let category = this.getAttribute('data-category');
+        filterElements(category);
+    });
+});
+
+filterElements('all');
+
+
+
+/*<!------------------------------------------------------------------------->
+<!-----                        S E R V I C E S                          ----->
+<!--------------------------------------------------------------------------->
+<!-----                     P L A C E H O L D E R                     ----->*/
+document.addEventListener("DOMContentLoaded", function() {
+    let isTyping = false;
+
+    var options = {
+        strings: ["Can i get advanced research paper on Cryogenic Engine?", "how to work liquid propulsion engine?", "What is our company policy?"],
+        typeSpeed: 70,
+        backSpeed: 30,
+        backDelay: 1000,
+        loop: true,
+        preStringTyped : function(){
+            if (isTyping){
+                return false;
+            }
+        },
+        onStringTyped: function(pos, self){
+            document.getElementById('placeInput').placeholder = self.el.innerText;
+        }
+    };
+
+    var typed = new Typed("#placeInput", options);
+
+     // Listen for focus event on the input field
+    document.getElementById("placeInput").addEventListener('focus', function(){
+        typed.stop();
+    });
+
+    // Listen for input event (when user starts typing)
+    document.getElementById('placeInput').addEventListener('input', function(){
+        if(this.value){
+            isTyping = true;
+        }
+    });
+
+    // Listen for blur event on the input field
+    document.getElementById('placeInput').addEventListener('blur', function(){
+        if(isTyping){
+            this.value = '';
+            isTyping = false;
+        }
+        typed.start();
+
+    });
+    
+});
+
+/*<!------------------------------------------------------------------------->
+<!-----                        S E R V I C E S                          ----->
+<!--------------------------------------------------------------------------->
+<!-----                         C A R O S E L                         ----->*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    let slideIndex = 0;
+    let slides = document.getElementsByClassName("serSliders");
+    let dots = document.getElementsByClassName("dot");
+
+    // Display the first slide by default
+    showSlides();
+
+    function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "flex";
+        dots[slideIndex - 1].className += " active-dot";
+
+        // Uncomment the next line to make the slides change every 4 seconds
+        // setTimeout(showSlides, 4000); 
+    }
+    setInterval(showSlides, 4000);
+    
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].addEventListener("click", function() {
+            slideIndex = i;
+            showSlides();
+        });
+    }
+});

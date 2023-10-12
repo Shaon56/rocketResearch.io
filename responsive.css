@@ -31,11 +31,6 @@
     .conDetails h1 {
         font-size: 40px;
         color: #000;
-        text-shadow:
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px 1px 0 #000,
-         1px 1px 0 #000; 
     }
     
     .conDetails p{
@@ -88,11 +83,42 @@
         font-size: 12px;
         padding: 10px 20px;
     }
+    /*<!------------------------------------------------------------------------->
+    <!-----                     M O D E L . H T M L                         ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                  M O D E L   E L E M E N T                    ----->*/
+    
+    .elements{
+        width: 100%;
+    }
+
+    /*<!------------------------------------------------------------------------->
+    <!-----                        S E R V I C E S                          ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                          B A N N E R                          ----->*/
+
+    .serComponent {
+        width: 90%;
+    }
+    .serComponent p{
+        font-size: 25px;
+    }
+    .serComponent  h1{
+        font-size: 40px;
+    }
+    .search-container {
+        width: 90%;
+    }
+
 }
 
 
-/*------------------------------------------------------------------------------------------------------------------------*/
 
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
 
 @media(max-width: 992px){
     /*<------------------------------------------------------------------------>
@@ -123,11 +149,6 @@
     .conDetails h1 {
         font-size: 40px;
         color: #000;
-        text-shadow:
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px 1px 0 #000,
-         1px 1px 0 #000; ;
     }
     
     .conDetails p{
@@ -252,7 +273,47 @@
         flex-direction: column;
         padding: 5px 0;
     }
+    /*<!------------------------------------------------------------------------->
+    <!-----                     M O D E L . H T M L                         ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                  M O D E L   E L E M E N T                    ----->*/
+    
+    .element{
+        min-width: 200px;
+        height: 420px;
+        padding: 20px;
+    }
+    .element img{
+        height: 200px;
+        width: 100%;
+    }
+        
+    /*<!------------------------------------------------------------------------->
+    <!-----                        S E R V I C E S                          ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                         C A R O S E L                         ----->*/
+    
+    .sliderDetails{
+        padding-right: 40px;
+    }
+    .sliderDetails h1{
+        color: #000;
+        font-size: 20px;
+    }
+    .sliderDetails h2{
+        color: #000;
+        font-size: 16px;
+    }
+    .sliderDetails p{
+        color: #000;
+        text-align: justify;
+        font-size: 14px;
+    }
 }
+
+
+
+
 
 /*--------------------------------------------------------------------------------------------------------------------------*/
 
@@ -366,11 +427,47 @@
         width: 90%;
         padding: 20px 0;
     }
+    /*<!------------------------------------------------------------------------->
+    <!-----                     M O D E L . H T M L                         ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                  M O D E L   E L E M E N T                    ----->*/
+    
+    .element{
+        min-width: 180px;
+        height: 350px;
+        padding: 15px;
+    }
+    .element img{
+        height: 180px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .bookDetails h2{
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .bookDetails h3{
+        font-size: 20px;
+    }
+    .bookDetails p{
+        font-size: 10px;
+    }
+    /*<!------------------------------------------------------------------------->
+    <!-----                        S E R V I C E S                          ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                         C A R O S E L                         ----->*/
+    .sliderImage{
+        width: 300px;
+    }
+    .sliderDetails{
+        width: 60%;
+    }
+}
     
 
 /*----------------------------------------------------------------------------------------------------------------------*/
 
-}
+
 @media(max-width: 576px){
     /*<------------------------------------------------------------------------>
     ------                          I N D E X                            ------>
@@ -394,11 +491,10 @@
         width: 70%;
     }
    .conDetails h1 {
-        font-size: 20px;
-        color: #FFCF96;
+        font-size: 25px;
     }
     .conDetails p{
-        font-size: 12px;
+        font-size: 16px;
         font-weight: 600;
         width: 80%;
         text-align: justify;
@@ -517,12 +613,215 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .easy-p1 li img{
+    .easy-p1 a img{
         height: 40px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 2px 0;
     }
-}
+    /*<!------------------------------------------------------------------------->
+    <!-----                     M O D E L . H T M L                         ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                  M O D E L   E L E M E N T                    ----->*/
+    .elements {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 30px 2.5%;
+        width: 100%;
+    }
+    .element{
+        min-width: 150px;
+        height: 400px;
+        padding: 10px;
+    }
+    .element img{
+        height: 180px;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .bookDetails h2{
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .bookDetails h3{
+        font-size: 20px;
+    }
+    .bookDetails p{
+        font-size: 10px;
+    }
+    /*<!------------------------------------------------------------------------->
+    <!-----                        S E R V I C E S                          ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                          B A N N E R                          ----->*/
+    .serTop{
+        padding: 10px 10px ;
+    }
+    .serTop h2 a{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .serImage {
+        width: 100%; /* 84% of the parent width */
+        margin-left: 0%; /* 8% margin on the left */
+        margin-right: 0%; /* 8% margin on the right */
+        height: 50vh;
+    } 
+    .serComponent p{
+        font-size: 20px;
+    }
+    .serComponent  h1{
+        font-size: 30px;
+    }
+    .search-container {
+        width: 100%;
+    }
 
+    .search-container input {
+        width: 100%;
+        font-size: 10px;
+        padding: 10px 30px 10px 30px; /* Added left padding */
+    }
+    .search-btn i{
+        font-size: 20px;
+    }
+    .serBtn a{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+    /*<!------------------------------------------------------------------------->
+    <!-----                        S E R V I C E S                          ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                        P R O M I C E S                        ----->*/
+    #quality{
+        margin-top: 20px;
+    }
+    .serQuality{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        background-position: right 5% bottom 4%;
+    }
+    .serQuality h2{
+        padding: 20px 0 10px 0px;
+        font-family: var(--btnFont);
+        font-size: 16px;
+        color: #faffad;
+        text-align: center;
+    }
+    .serQuality p{
+        padding: 0px 0 10px 0px;
+        font-size: 16px;
+        color: #fdffdc;
+    }
+    .serQuality button{
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #faffad;
+        margin-bottom: 10px;
+    }
+    /*<!------------------------------------------------------------------------->
+    <!-----                        S E R V I C E S                          ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                         C A R O S E L                         ----->*/
+    .serSlider{
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+    .serSliders{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 20px 5%;
+        box-shadow: 0px 0 0px 0px #0000001a,   /* left shadow */
+        0px 0 0px 0px #0000001a,    /* right shadow */
+        0 -10px 10px -5px #0000001a,   /* top shadow */
+        0 5px 10px -5px #00000044;
+        border-radius: 20px;
+        transition: all 0.3s;
+    }
+    .sliderImage{
+        width: 250px;
+    }
+    .sliderDetails{
+        width: 100%;
+        padding: 20px;
+    }
+    .sliderDetails h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .sliderDetails h2{
+        font-size: 16px;
+        text-align: center;
+    }
+    .sliderDetails p{
+        font-size: 12px;
+    }
+    .ach{
+        width: 200px;
+        margin-top: 20px;
+        background-color: #c2c2c2;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .ach h2{
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+    /*<!------------------------------------------------------------------------->
+    <!-----                        S C H E D U L E                          ----->
+    <!--------------------------------------------------------------------------->
+    <!-----                        S C H E D U L E                        ----->*/ 
+    .schedule{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .scCard{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        width: 88%;
+        border-radius: 20px;
+        box-shadow: 1px 4px 8px #0000001a;
+        margin: 10px 0;
+    }
+    .scImg{
+        height: 200px;
+        padding: 10px;
+    }
+    .scImg img{
+        height: 100%;
+        border-radius: 10px;
+    }
+    .scDetails{
+        width: 90%;
+    }
+    .scDetails h2{
+        text-align: center;
+        font-size: 14px;
+    }
+    .scDetails p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .launch{
+        margin-top: 20px;
+    }
+    .launch h2{
+        font-size: 14px;
+    }
+    .launch-time span{
+        font-size: 15px;
+    }
+    #pagination a{
+        padding: 7px 12px;
+        border-radius: 15%;
+    }
+}
