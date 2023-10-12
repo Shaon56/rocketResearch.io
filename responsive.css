@@ -635,6 +635,11 @@
         height: 400px;
         padding: 10px;
     }
+    .eleDetails h2 {
+        color: #444444;
+        font-size: 14px;
+        padding: 10px 0;
+    }
     .element img{
         height: 180px;
         width: 100%;
