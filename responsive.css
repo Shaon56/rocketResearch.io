@@ -11,7 +11,7 @@
     }
     .logLink {
         position: absolute;
-        top: 26px;
+        top: 20px;
         right: 50px;
     }
 
@@ -130,7 +130,7 @@
     }
     .logLink {
         position: absolute;
-        top: 36px;
+        top: 30px;
         right: 50px;
     }
     .logLink a, .navLink a {
@@ -511,6 +511,7 @@
     .transBtn{
         padding: 5px;
         font-size: 12px;
+        margin-bottom: 10px;
     }
 
     #trust{
@@ -518,6 +519,15 @@
     }
     .trustImg img{
         margin: 10px 15px;
+    }
+    .wrapper{
+        width: 300px;
+        height: 440px;
+        margin-top: -220px;
+        margin-left: -150px;
+    }
+    .wrapper .form-box.resister{
+        transform: translateX(300px);
     }
     /*<!----------------------------------------------------------------------->
     <!-----                          I N D E X                            ----->
@@ -691,7 +701,7 @@
         font-size: 20px;
     }
     .serBtn a{
-        font-size: 10px;
+        font-size: 14px;
         padding: 5px 10px;
     }
     /*<!------------------------------------------------------------------------->

@@ -1,4 +1,4 @@
-const mobile = document.getElementById("mobile");
+/*const mobile = document.getElementById("mobile");
 const close = document.getElementById("close");
 const navLink = document.getElementById("navLink");
 
@@ -12,6 +12,113 @@ if(close){
         mobile.classList.remove("active");
     })
 }
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // your entire JavaScript code goes here
+    const wrapper = document.querySelector('.wrapper');
+    const loginLink = document.querySelector('.login-link');
+    const resisterLink = document.querySelector('.resister-link');
+    const btnPopup = document.querySelector('.signUp');
+    const closePopup = document.querySelector('.icon-close');
+
+    resisterLink.addEventListener('click', () => {
+        wrapper.classList.add('active');
+    });
+    loginLink.addEventListener('click', () => {
+        wrapper.classList.remove('active');
+    });
+    btnPopup.addEventListener('click', () => {
+        wrapper.classList.add('active-popup');
+    });
+    console.log("Binding event to closePopup");
+    closePopup.addEventListener('mouseenter', () => {
+        console.log("Mouse entered close button!");
+    });
+    
+    
+    if (closePopup) {
+        console.log(".icon-close element found");
+    } else {
+        console.log(".icon-close element NOT found");
+    }
+    
+
+});*/
+document.addEventListener("DOMContentLoaded", function() {
+
+    const wrapper = document.querySelector('.wrapper');
+    const loginLink = document.querySelector('.login-link');
+    const resisterLink = document.querySelector('.resister-link');
+    const btnPopup = document.querySelector('.signUp');
+    const closePopup = document.querySelector('.icon-close');
+    const closeIcon = document.querySelector('.icon-close i');
+
+    resisterLink.addEventListener('click', () => {
+        wrapper.classList.add('active');
+    });
+
+    loginLink.addEventListener('click', () => {
+        wrapper.classList.remove('active');
+    });
+
+    btnPopup.addEventListener('click', () => {
+        wrapper.classList.add('active-popup');
+    });
+    closeIcon.addEventListener('click', () => {
+        wrapper.classList.remove('active-popup');
+    });
+    closePopup.addEventListener('click', () => {
+        wrapper.classList.remove('active-popup');
+    });
+    
+
+    const mobile = document.getElementById("mobile");
+    const navLink = document.getElementById("navLink");
+    const close = document.getElementById("close");
+
+    if (mobile) {
+        mobile.addEventListener("click", () => {
+            navLink.classList.add("active");
+        });
+    }
+
+    if (close) {
+        close.addEventListener("click", () => {
+            navLink.classList.remove("active");
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Animator when scroll design-------------------------------------------------------------------------------
 window.addEventListener('scroll', function(){
     const animatedElements = document.querySelectorAll('.scroll-animate');
@@ -198,7 +305,6 @@ window.addEventListener('scroll', function(){
 
 
 window.addEventListener('scroll', function(){
-    console.log("Scrolling..."); // To check if scroll event is detected
     const cards = document.querySelectorAll(".card");
     
     cards.forEach(card => {
